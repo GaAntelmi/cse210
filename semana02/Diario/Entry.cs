@@ -5,7 +5,7 @@ public class Entry
     public string _date;
         public string _promptText;
             public string _entryText;
-                public string _mood; // Campo extra para exceder os requisitos
+                public string _mood; 
 
                     public void Display()
                         {
