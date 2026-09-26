@@ -32,7 +32,7 @@ public class Journal
         {
             foreach (Entry entry in _entries)
             {
-                // Utiliza o separador ~|~ para evitar ambiguidades com vírgulas no texto
+                
                 outputFile.WriteLine($"{entry._date}~|~{entry._promptText}~|~{entry._entryText}~|~{entry._mood}");
             }
         }
@@ -47,7 +47,7 @@ public class Journal
             return;
         }
 
-        _entries.Clear(); // Substitui os registros atuais conforme especificado
+        _entries.Clear(); 
         string[] lines = File.ReadAllLines(file);
 
         foreach (string line in lines)
